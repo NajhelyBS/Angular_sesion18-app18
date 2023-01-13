@@ -1,6 +1,10 @@
 body {
     padding: 3em;
 }
+p{
+    font-weight: 600;
+    font-size: 30px
+}
 #data {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -10,6 +14,7 @@ body {
   #data td, #data th {
     border: 1px solid #ddd;
     padding: 8px;
+
   }
   
   #data tr:nth-child(even){background-color: #f2f2f2;}
@@ -20,6 +25,10 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: red;
+    background-color: rgb(5, 18, 32);
     color: #fff;
+  }
+
+  button{
+    width:100%;
   }

@@ -1,7 +1,7 @@
 <body>
     
 
-<p>home works!</p>
+<p>Sesión 18 - App-18 </p>
 
 <table id="data">
 	<tr>
@@ -9,12 +9,17 @@
         <th>Id</th>
 		<th>Title</th>
 		<th>Completed</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+
 	</tr>
-	<tr *ngFor="let dato  of datos">
+	<tr *ngFor="let dato  of datos; let i= index">
         <td>{{dato.userId}}</td>
         <td>{{dato.id}}</td>
         <td>{{dato.title}}</td>
         <td>{{dato.completed}}</td>
+        <td><button class="d-flex justify-content-center btn btn-success">EDITAR</button></td>
+        <td><button class="d-flex justify-content-center btn btn-danger" (click)="delete(dato)">ELIMINAR</button></td>
 
     </tr>
 </table>
