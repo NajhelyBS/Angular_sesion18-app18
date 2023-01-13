@@ -8,7 +8,7 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class HomeComponent implements OnInit {
 
-  datos!:string[];
+  datos:any = [];
 
   constructor(private data:DataService) {}
 

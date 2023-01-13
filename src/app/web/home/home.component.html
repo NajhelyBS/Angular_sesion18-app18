@@ -1,5 +1,9 @@
+<body>
+    
+
 <p>home works!</p>
-<table id="employees">
+
+<table id="data">
 	<tr>
 		<th>UserId</th>
         <th>Id</th>
@@ -7,6 +11,12 @@
 		<th>Completed</th>
 	</tr>
 	<tr *ngFor="let dato  of datos">
-		<td>{{dato | json}}</td>
-	</tr>
+        <td>{{dato.userId}}</td>
+        <td>{{dato.id}}</td>
+        <td>{{dato.title}}</td>
+        <td>{{dato.completed}}</td>
+
+    </tr>
 </table>
+
+</body>

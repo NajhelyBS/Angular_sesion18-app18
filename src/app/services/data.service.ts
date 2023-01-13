@@ -11,7 +11,7 @@ export class DataService {
 
   constructor(private http:HttpClient) { }
 
-  getData():Observable<string[]>{
-    return this.http.get<string[]>(this.urlJSON);
+  getData():Observable<any[]>{
+    return this.http.get<any[]>(this.urlJSON);
   }
 }
