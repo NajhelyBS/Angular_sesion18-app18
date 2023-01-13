@@ -1,0 +1,12 @@
+<p>home works!</p>
+<table id="employees">
+	<tr>
+		<th>UserId</th>
+        <th>Id</th>
+		<th>Title</th>
+		<th>Completed</th>
+	</tr>
+	<tr *ngFor="let dato  of datos">
+		<td>{{dato | json}}</td>
+	</tr>
+</table>
