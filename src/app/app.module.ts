@@ -12,9 +12,9 @@ import { WebModule } from './web/web.module';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     WebModule,
     HttpClientModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

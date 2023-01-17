@@ -11,7 +11,14 @@ export class DataService {
 
   constructor(private http:HttpClient) { }
 
+  //obteniendo data 
   getData():Observable<any[]>{
     return this.http.get<any[]>(this.urlJSON);
   }
+
+  getValue(id: number){
+    return this.http.get<any>(`${this.urlJSON}/${id}`);
+  }
+
 }
+
